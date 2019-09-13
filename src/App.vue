@@ -1,11 +1,13 @@
 <template>
   <div class="container">
-    <h1>Goal Keeper</h1>
+    <app-goal-grid :goals="goals"></app-goal-grid>
   </div>
 </template>
 
 <!-- This is the root Vue instance/root component -->
 <script>
+  import GoalGrid from './components/GoalGrid.vue';
+
   export default {
     data() {
       return {
@@ -14,6 +16,9 @@
         ],
         maxGoals: 15
       }
+    },
+    components: {
+      appGoalGrid: GoalGrid
     }
   }
 </script>
