@@ -1,5 +1,5 @@
 <template>
-  <div class="col-md-6 col-lg-4 col-xl-3">
+  <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
     <div class="card">
       <div class="card-body goal">
         <!-- Slots are used to render content passed in from outside to a child component. An alternative to props; to pass in more complex/lengthy content -->

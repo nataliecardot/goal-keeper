@@ -3,6 +3,11 @@
     <!-- Could pass as "newGoal($event)" but no need; Vue.js does it implicitly -->
     <app-new-goal @goalAdded="newGoal"></app-new-goal>
     <app-goal-grid :goals="goals"></app-goal-grid>
+    <div class="row">
+      <div class="col text-center">
+        <div class="alert alert-info">Note: Click on a goal to delete it.</div>
+      </div>
+    </div>
   </div>
 </template>
 
