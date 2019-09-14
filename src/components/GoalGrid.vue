@@ -1,5 +1,5 @@
 <template>
-  <div class="row">
+  <div class="row justify-content-center">
     <app-goal v-for="(goal, index) in goals" v-bind:key="index">{{ goal }}</app-goal>
   </div>
 </template>
