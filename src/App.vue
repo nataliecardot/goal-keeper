@@ -1,5 +1,6 @@
 <template>
   <div class="container-fluid">
+    <!-- Could pass as "newGoal($event)" but no need; Vue.js does it implicitly -->
     <app-new-goal @goalAdded="newGoal"></app-new-goal>
     <app-goal-grid :goals="goals"></app-goal-grid>
   </div>
@@ -20,8 +21,9 @@
       }
     },
     methods: {
-      newQuote() {
-
+      // Emit event from NewGoal.vue automatically passed to parent (this file); using it here
+      newGoal(goal) {
+        this.goals.push(goal);
       }
     },
     components: {
