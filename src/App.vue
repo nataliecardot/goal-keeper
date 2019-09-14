@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container-fluid">
     <app-new-goal @goalAdded="newGoal"></app-new-goal>
     <app-goal-grid :goals="goals"></app-goal-grid>
   </div>
