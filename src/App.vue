@@ -31,6 +31,9 @@
     methods: {
       // Emit event from NewGoal.vue automatically passed to parent (this file); using it here
       newGoal(goal) {
+        if (this.goals.length >= this.maxGoals) {
+          return alert('Please delete a goal first.')
+        }
         this.goals.push(goal);
       },
       deleteGoal(index) {
