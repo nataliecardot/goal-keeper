@@ -1,10 +1,10 @@
 <template>
   <div class="row justify-content-center">
-    <div class="col-md-9">
+    <div class="col-md-6">
       <h2>Goals Added</h2>
       <div class="progress">
       	<div
-          class="progress-bar bg-info"
+          class="progress-bar bg-secondary"
           role="progressbar"
           aria-valuenow="60"
           aria-valuemin="0"

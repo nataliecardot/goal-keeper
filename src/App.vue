@@ -1,5 +1,6 @@
 <template>
   <div class="container-fluid">
+    <h1 class="text-center">Goal Keeper</h1>
     <app-progress-bar :goalCount="goals.length" :maxGoals="maxGoals"></app-progress-bar>
     <!-- Could pass as "newGoal($event)" but no need; Vue.js does it implicitly -->
     <app-new-goal @goalAdded="newGoal"></app-new-goal>
