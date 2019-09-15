@@ -6,7 +6,7 @@
         <textarea class="form-control" rows="3" v-model="goal"></textarea>
       </div>
       <div class="form-group">
-        <button class="btn btn-primary" @click.prevent="createNew">Add goal</button>
+        <button class="btn btn-primary" :disabled="!goal" @click.prevent="createNew">Add goal</button>
       </div>
     </form>
   </div>
@@ -16,13 +16,13 @@
   export default {
     data() {
       return {
-        goal: ''
+        goal: null
       }
     },
     methods: {
       createNew() {
         this.$emit('goalAdded', this.goal);
-        this.goal = ''
+        this.goal = null
       }
     }
   }
