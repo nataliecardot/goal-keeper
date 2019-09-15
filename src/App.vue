@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid">
-    <app-progress-bar></app-progress-bar>
+    <app-progress-bar :goalCount="goals.length" :maxGoals="maxGoals"></app-progress-bar>
     <!-- Could pass as "newGoal($event)" but no need; Vue.js does it implicitly -->
     <app-new-goal @goalAdded="newGoal"></app-new-goal>
     <!-- Not relevant that deleteGoal is used in both GoalGrid and this root component; naming could be different. In this file it refers to the method defined below. Also, index is automatically passed, as content was automatically passed for @goalAdded above -->
