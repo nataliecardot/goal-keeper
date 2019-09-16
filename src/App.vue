@@ -1,6 +1,9 @@
 <template>
   <div class="container-fluid">
     <h1 class="text-center">Goal Keeper</h1>
+    <div class="col-md-8 col-lg-5 mx-auto instrux">
+      <p class="mt-4">Add 20 goals you'd like to achieve, no matter how big or small! When you finish one, mark it as completed and add a new one to the list.</p>
+    </div>
     <app-progress-bar :goalCount="goals.length" :maxGoals="maxGoals"></app-progress-bar>
     <!-- Could pass as "newGoal($event)" but no need; Vue.js does it implicitly -->
     <app-new-goal @goalAdded="newGoal"></app-new-goal>
@@ -30,7 +33,7 @@
           'Add some goals!'
         ],
         completedGoals: [],
-        maxGoals: 16
+        maxGoals: 20
       }
     },
     methods: {

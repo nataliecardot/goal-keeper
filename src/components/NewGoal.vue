@@ -1,7 +1,7 @@
 <template>
   <div class="row justify-content-center">
     <!-- Offsets are being used to center the textarea and button within the divs; otherwise they're flush left -->
-    <form class="col-md-8 col-lg-5 mt-5 mb-3">
+    <form class="col-md-8 col-lg-5 col-xl-4 mt-5 mb-4">
       <div class="form-group">
         <textarea autofocus class="form-control" rows="3" v-model="goal" v-on:keyup.enter="createNew"></textarea>
       </div>
