@@ -1,18 +1,12 @@
 # Goal Keeper
 
-> A simple goal tracking app.
+A simple goal tracking app built using Vue.js for practice with Vue components, props, slots, and emitting custom events.
 
-## Build Setup
+The user can add goals and click on them mark them as completed.
 
-``` bash
-# install dependencies
-npm install
+## Notes
 
-# serve with hot reload at localhost:8080
-npm run dev
+I used the `webpack-simple` template to bootstrap the app.
 
-# build for production with minification
-npm run build
-```
+To deploy to GitHub Pages, I used [vue-gh-pages](https://www.npmjs.com/package/vue-gh-pages).
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
