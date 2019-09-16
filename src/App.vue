@@ -26,7 +26,7 @@
         goals: [
           'Add some goals!'
         ],
-        maxGoals: 15
+        maxGoals: 16
       }
     },
     methods: {
