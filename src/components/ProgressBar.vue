@@ -1,7 +1,7 @@
 <template>
   <div class="row justify-content-center">
     <div class="col-md-6">
-      <h2>Goals Added</h2>
+      <h3>Added</h3>
       <div class="progress">
       	<div
           class="progress-bar bg-secondary"

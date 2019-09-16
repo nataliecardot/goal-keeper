@@ -8,9 +8,11 @@
     <app-goal-grid :goals="goals" @goalDeleted="deleteGoal"></app-goal-grid>
     <div class="row">
       <div class="col text-center">
-        <div class="alert alert-info">Note: Click on a goal to delete it.</div>
+        <div class="alert alert-info mt-2">Note: Click on a goal to mark it as completed.</div>
       </div>
     </div>
+    <h2 class="text-center" v-show="completedGoals.length > 0">Completed</h2>
+    <app-completed-goal-grid :completed-goals="completedGoals"></app-completed-goal-grid>
   </div>
 </template>
 
@@ -19,6 +21,7 @@
   import GoalGrid from './components/GoalGrid.vue';
   import NewGoal from './components/NewGoal.vue';
   import ProgressBar from './components/ProgressBar.vue';
+  import CompletedGoalGrid from './components/CompletedGoalGrid.vue';
 
   export default {
     data() {
@@ -26,6 +29,7 @@
         goals: [
           'Add some goals!'
         ],
+        completedGoals: [],
         maxGoals: 16
       }
     },
@@ -39,12 +43,14 @@
       },
       deleteGoal(index) {
         // Modifies existing array, removing 1 item from it at the specified index
+        this.completedGoals.push(this.goals[index]);
         this.goals.splice(index, 1);
       }
     },
     components: {
       appGoalGrid: GoalGrid,
       appNewGoal: NewGoal,
+      appCompletedGoalGrid: CompletedGoalGrid,
       appProgressBar: ProgressBar
     }
   }
