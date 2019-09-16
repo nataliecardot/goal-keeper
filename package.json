@@ -5,6 +5,7 @@
   "author": "Natalie Cardot",
   "private": true,
   "homepage": "https://nataliecardot.com/goal-keeper",
+  "wst": "/dist/",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
