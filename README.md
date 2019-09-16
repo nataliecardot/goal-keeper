@@ -4,6 +4,8 @@ A simple goal tracking app built using Vue.js for practice with Vue components, 
 
 The user can add goals and click on them to mark them as completed, which displays them in a 'completed' section.
 
+[View it live.](https://nataliecardot.com/goal-keeper/)
+
 ## Notes
 
 I used the `webpack-simple` template to bootstrap the app.
